@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3</title>
     <link rel="stylesheet" href="css/music.css">
-    <title>MP3 Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 </head>
 <body>
     <h1>MP3 Player</h1>
@@ -13,33 +14,33 @@
     <div class="music-container" id="music-container">
         <div class="music-info">
             <h4 id="title">Summer.mp3</h4>
-            <div class="progress-container" id="progress-container"></div>
+            <div class="progress-container" id="progress-container">
                 <div class="progress" id="progress"></div>
+            </div>
         </div>
+
+
+    <audio id="audio" src="music/summer.mp3"></audio>
     
+    <div class="img-container">
+        <img src="images/summer.jpg" alt="music-cover" id="cover">
+</div>
 
-        <audio src="music/summer.mp3"></audio>
+<div class="navigation">
+    <button class="action-btn" id="prev">
+        <i class="fa-solid fa-backward"></i>
+    </button>
 
-        <div class="img-container">
-            <img src="images/summer.jpg" alt="music-cover"
-            id="cover">
-        </div>
+    <button id="play" class="action-btn action-btn-big">
+        <i class="fa-solid fa-play"></i>
+    </button>
 
-        <div class="navigation">
-            <button class="action-btn" id="prev">
-                <i class="fa-solid fa-backward"></i>
-            </button>
-
-            <button id="play" class="action-btn action-btn-big">
-                <i class="fa-solid fa-play"></i>
-            </button>
-
-            <button id="next" class="action-btn">
-                <i class="fa-solid fa-forward"></i>
-            </button>
-        </div>
-    </div>
+    <button id="next" class="action-btn">
+        <i class="fa-solid fa-forward"></i>
+    </button>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"></script>
 </body>
 <script src="js/music.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"></script>
 </html>
