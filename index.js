@@ -8,7 +8,7 @@ const progressContainer = document.getElementById('progress-container')
 const skipbtn = document.getElementById('next')
 const prevbtn = document.getElementById('prev')
 
-const songs = ['Hey', 'Summer', 'Ukulele']
+const songs = ['hey', 'summer', 'ukulele']
 let songIndex = 0
 
 function loadSong(song) {
